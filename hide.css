@@ -1,0 +1,20 @@
+/* Ad slots in the page around the player: the feed, the sidebar, search. */
+ytd-ad-slot-renderer,
+ytd-in-feed-ad-layout-renderer,
+ytd-promoted-sparkles-web-renderer,
+ytd-promoted-video-renderer,
+ytd-display-ad-renderer,
+ytd-banner-promo-renderer,
+ytd-statement-banner-renderer,
+ytd-companion-slot-renderer,
+ytd-action-companion-ad-renderer,
+ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-ads"],
+#player-ads,
+#masthead-ad,
+.ytp-ad-overlay-container,
+.ytp-ad-overlay-slot,
+ytd-rich-item-renderer:has(> #content > ytd-ad-slot-renderer),
+ytm-promoted-sparkles-web-renderer,
+ad-slot-renderer {
+  display: none !important;
+}

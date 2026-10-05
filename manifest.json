@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Ad Skip (personal)",
+  "version": "1.0.0",
+  "description": "Skips YouTube video ads and hides ad slots. Personal use; not published.",
+  "icons": { "128": "icons/128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*", "https://m.youtube.com/*", "https://music.youtube.com/*"],
+      "js": ["skip.js"],
+      "css": ["hide.css"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ]
+}
